@@ -1,0 +1,62 @@
+﻿<Window x:Class="prakt15_konkov.ProductWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:prakt15_konkov"
+        mc:Ignorable="d"
+        WindowState="Maximized"
+        Title="Продукт" Height="450" Width="800"
+        Background="{StaticResource MainBg}">
+    <Grid Margin="15">
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock Name="TitleText" Text="Добавление товара" FontSize="18" FontWeight="Bold" Foreground="{StaticResource SecondaryColor}" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Наименование:"/>
+            <TextBox Name="NameBox" Background="White"/>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0">
+                    <TextBlock Text="Цена (руб.):"/>
+                    <TextBox Name="PriceBox" Background="White"/>
+                </StackPanel>
+                <StackPanel Grid.Column="2">
+                    <TextBlock Text="Остаток (шт.):"/>
+                    <TextBox Name="QuantityBox" Background="White"/>
+                </StackPanel>
+            </Grid>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0">
+                    <TextBlock Text="Категория:"/>
+                    <ComboBox Name="CategoryBox" DisplayMemberPath="Name" Background="White"/>
+                </StackPanel>
+                <StackPanel Grid.Column="2">
+                    <TextBlock Text="Бренд:"/>
+                    <ComboBox Name="BrandBox" DisplayMemberPath="Name" Background="White"/>
+                </StackPanel>
+            </Grid>
+
+            <TextBlock Text="Рейтинг (0-5):"/>
+            <TextBox Name="RatingBox" Background="White"/>
+
+            <TextBlock Text="Описание:"/>
+            <TextBox Name="DescriptionBox" Height="50" TextWrapping="Wrap" AcceptsReturn="True" Background="White"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,15,0,0">
+                <Button Content="Сохранить" Click="Save_Click" Width="100" Margin="0,0,10,0"/>
+                <Button Content="Отмена" Click="Cancel_Click" Background="Gray" Width="90"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

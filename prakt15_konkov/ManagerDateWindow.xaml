@@ -1,0 +1,80 @@
+﻿<Window x:Class="prakt15_konkov.ManagerDateWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:prakt15_konkov"
+        mc:Ignorable="d"
+        WindowState="Maximized"
+        Title="Общее управление" Height="450" Width="800"
+        Background="{StaticResource MainBg}">
+    <Grid Margin="12">
+        <TabControl>
+            <TabItem Header="Категории">
+                <Grid Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <ListBox Name="CategoriesList" Grid.Row="0" DisplayMemberPath="Name" Background="White" SelectionChanged="Category_Selected"/>
+
+                    <TextBox Name="CategoryBox" Grid.Row="1" Margin="0,10,0,0" Background="White"/>
+
+                    <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+                        <Button Content="Добавить" Click="AddCategory_Click" Width="100" Margin="5"/>
+                        <Button Content="Изменить" Click="EditCategory_Click" Width="100" Margin="5"
+                                Background="{StaticResource SecondaryColor}"/>
+                        <Button Content="Удалить" Click="DeleteCategory_Click" Width="100" Margin="5"
+                                Background="#FF5252"/>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Бренды">
+                <Grid Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <ListBox Name="BrandsList" Grid.Row="0" DisplayMemberPath="Name" Background="White" SelectionChanged="Brand_Selected"/>
+
+                    <TextBox Name="BrandBox" Grid.Row="1" Margin="0,10,0,0" Background="White"/>
+
+                    <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+                        <Button Content="Добавить" Click="AddBrand_Click" Width="100" Margin="5"/>
+                        <Button Content="Изменить" Click="EditBrand_Click" Width="100" Margin="5"
+                                Background="{StaticResource SecondaryColor}"/>
+                        <Button Content="Удалить" Click="DeleteBrand_Click" Width="100" Margin="5"
+                                Background="#FF5252"/>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Теги">
+                <Grid Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <ListBox Name="TagsList" Grid.Row="0" DisplayMemberPath="Name" Background="White" SelectionChanged="Tag_Selected"/>
+
+                    <TextBox Name="TagBox" Grid.Row="1" Margin="0,10,0,0" Background="White"/>
+
+                    <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+                        <Button Content="Добавить" Click="AddTag_Click" Width="100" Margin="5"/>
+                        <Button Content="Изменить" Click="EditTag_Click" Width="100" Margin="5"
+                                Background="{StaticResource SecondaryColor}"/>
+                        <Button Content="Удалить" Click="DeleteTag_Click" Width="100" Margin="5"
+                                Background="#FF5252"/>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
