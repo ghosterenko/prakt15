@@ -28,10 +28,13 @@ namespace prakt15_konkov
         private void LoadData()
         {
             try
-            {
-                allProducts = db.Products.Include(p => p.Category)
+            { 
+                allProducts = db.Products
+                    .Include(p => p.Category)
                     .Include(p => p.Brand)
+                    .Include(p => p.Tags)
                     .ToList();
+                
 
                 ApplyFilter();
             }

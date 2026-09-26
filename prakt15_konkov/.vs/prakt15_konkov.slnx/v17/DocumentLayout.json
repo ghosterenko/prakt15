@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\st310-10\\Desktop\\konkov_pr15\\prakt15\\prakt15_konkov\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6671396E-ABF1-BDB4-8E9E-E65C3724C9E7}|prakt15_konkov.csproj|c:\\users\\st310-10\\desktop\\konkov_pr15\\prakt15\\prakt15_konkov\\autorizwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6671396E-ABF1-BDB4-8E9E-E65C3724C9E7}|prakt15_konkov.csproj|solutionrelative:autorizwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6671396E-ABF1-BDB4-8E9E-E65C3724C9E7}|prakt15_konkov.csproj|c:\\users\\st310-10\\desktop\\konkov_pr15\\prakt15\\prakt15_konkov\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6671396E-ABF1-BDB4-8E9E-E65C3724C9E7}|prakt15_konkov.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6671396E-ABF1-BDB4-8E9E-E65C3724C9E7}|prakt15_konkov.csproj|c:\\users\\st310-10\\desktop\\konkov_pr15\\prakt15\\prakt15_konkov\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6671396E-ABF1-BDB4-8E9E-E65C3724C9E7}|prakt15_konkov.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{6671396E-ABF1-BDB4-8E9E-E65C3724C9E7}|prakt15_konkov.csproj|c:\\users\\st310-10\\desktop\\konkov_pr15\\prakt15\\prakt15_konkov\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6671396E-ABF1-BDB4-8E9E-E65C3724C9E7}|prakt15_konkov.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6671396E-ABF1-BDB4-8E9E-E65C3724C9E7}|prakt15_konkov.csproj|c:\\users\\st310-10\\desktop\\konkov_pr15\\prakt15\\prakt15_konkov\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6671396E-ABF1-BDB4-8E9E-E65C3724C9E7}|prakt15_konkov.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,42 +22,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AutorizWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\st310-10\\Desktop\\konkov_pr15\\prakt15\\prakt15_konkov\\AutorizWindow.xaml",
-              "RelativeDocumentMoniker": "AutorizWindow.xaml",
-              "ToolTip": "C:\\Users\\st310-10\\Desktop\\konkov_pr15\\prakt15\\prakt15_konkov\\AutorizWindow.xaml",
-              "RelativeToolTip": "AutorizWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-09-26T08:26:56.806Z",
+              "DocumentIndex": 2,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\st310-10\\Desktop\\konkov_pr15\\prakt15\\prakt15_konkov\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Models\\Product.cs",
+              "ToolTip": "C:\\Users\\st310-10\\Desktop\\konkov_pr15\\prakt15\\prakt15_konkov\\Models\\Product.cs",
+              "RelativeToolTip": "Models\\Product.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAuwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-26T08:48:15.888Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\st310-10\\Desktop\\konkov_pr15\\prakt15\\prakt15_konkov\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\st310-10\\Desktop\\konkov_pr15\\prakt15\\prakt15_konkov\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwBAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-26T08:45:13.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\st310-10\\Desktop\\konkov_pr15\\prakt15\\prakt15_konkov\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
               "ToolTip": "C:\\Users\\st310-10\\Desktop\\konkov_pr15\\prakt15\\prakt15_konkov\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-09-26T08:26:19.88Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\st310-10\\Desktop\\konkov_pr15\\prakt15\\prakt15_konkov\\App.xaml",
-              "RelativeDocumentMoniker": "App.xaml",
-              "ToolTip": "C:\\Users\\st310-10\\Desktop\\konkov_pr15\\prakt15\\prakt15_konkov\\App.xaml",
-              "RelativeToolTip": "App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-09-26T08:26:08.799Z",
+              "WhenOpened": "2026-09-26T08:43:11.011Z",
               "EditorCaption": ""
             }
           ]

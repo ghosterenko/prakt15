@@ -74,10 +74,12 @@
                                     <RowDefinition Height="Auto"/>
                                     <RowDefinition Height="Auto"/>
                                     <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="auto"/>
                                 </Grid.ColumnDefinitions>
 
                                 <TextBlock Grid.Row="0" Grid.Column="0" Text="{Binding Name}" FontWeight="Bold" FontSize="16"/>
@@ -87,8 +89,20 @@
                                     <TextBlock Text="{Binding Category.Name, StringFormat='Категория: {0}'}" Foreground="Gray"/>
                                 </StackPanel>
 
-                                <TextBlock Grid.Row="2" Grid.Column="0" Text="{Binding Description}" TextWrapping="Wrap" Margin="0,6,15,0" Foreground="#444444"/>
+                                <TextBlock Grid.Row="2" Grid.Column="0" Text="{Binding Description}" Margin="0,6,15,0" Foreground="#444444"/>
                                 <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding Stock, StringFormat='Остаток: {0} шт.'}" VerticalAlignment="Bottom" FontWeight="SemiBold"/>
+                                <ItemsControl Grid.Row="3" Grid.Column="0" ItemsSource="{Binding Tags}" Margin="0,6,15,0">
+                                    <ItemsControl.ItemsPanel>
+                                        <ItemsPanelTemplate>
+                                            <StackPanel Orientation="Horizontal"/>
+                                        </ItemsPanelTemplate>
+                                    </ItemsControl.ItemsPanel>
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Name, StringFormat='#{0} '}"/>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
                             </Grid>
                         </Border>
 
