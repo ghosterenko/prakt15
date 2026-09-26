@@ -56,7 +56,7 @@ namespace prakt15_konkov
                 CategoryBox.SelectedItem == null ||
                 BrandBox.SelectedItem == null)
             {
-                MessageBox.Show("Заполните корректно все поля!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Заполните корректно все поля", "Ошибка", MessageBoxButton.OK);
                 return;
             }
 

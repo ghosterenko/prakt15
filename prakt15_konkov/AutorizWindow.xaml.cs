@@ -30,7 +30,7 @@ namespace prakt15_konkov
             }
             else
             {
-                MessageBox.Show("Неверный пин-код! Доступ запрещен.", "Ошибка авторизации", MessageBoxButton.OK);
+                MessageBox.Show("Неверный пин-код", "Ошибка авторизации", MessageBoxButton.OK);
             }
         }
 

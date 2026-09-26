@@ -65,7 +65,7 @@ namespace prakt15_konkov
 
             if (db.Products.Any(p => p.CategoryId == c.Id))
             {
-                MessageBox.Show("Категория используется товарами!");
+                MessageBox.Show("Категория используется товарами");
                 return;
             }
             if (MessageBox.Show($"Удалить {c.Name}?", "Подтверждение",
@@ -109,7 +109,7 @@ namespace prakt15_konkov
 
             if (db.Products.Any(p => p.BrandId == b.Id))
             {
-                MessageBox.Show("Бренд используется товарами!");
+                MessageBox.Show("Бренд используется товарами");
                 return;
             }
             if (MessageBox.Show($"Удалить {b.Name}?", "Подтверждение",
@@ -151,7 +151,7 @@ namespace prakt15_konkov
             Tag t = TagsList.SelectedItem as Tag;
             if (t == null) return;
 
-            if (MessageBox.Show($"Удалить {t.Name"?", "Подтверждение",
+            if (MessageBox.Show($"Удалить {t.Name}?", "Подтверждение",
                 MessageBoxButton.YesNo, MessageBoxImage.Warning) != MessageBoxResult.Yes) return;
 
             db.Tags.Remove(t);

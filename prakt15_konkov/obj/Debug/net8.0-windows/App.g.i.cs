@@ -47,7 +47,7 @@ namespace prakt15_konkov {
         /// InitializeComponent
         /// </summary>
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "10.0.12.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "9.0.20.0")]
         public void InitializeComponent() {
             if (_contentLoaded) {
                 return;
@@ -59,7 +59,7 @@ namespace prakt15_konkov {
             
             #line default
             #line hidden
-            System.Uri resourceLocater = new System.Uri("/prakt15_konkov;component/app.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/prakt15_konkov;V1.0.0.0;component/app.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\App.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
@@ -73,7 +73,7 @@ namespace prakt15_konkov {
         /// </summary>
         [System.STAThreadAttribute()]
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "10.0.12.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "9.0.20.0")]
         public static void Main() {
             prakt15_konkov.App app = new prakt15_konkov.App();
             app.InitializeComponent();

@@ -123,7 +123,7 @@ namespace prakt15_konkov
             }
             else
             {
-                MessageBox.Show("Выберите товар из списка для редактирования!", "Предупреждение");
+                MessageBox.Show("Выберите товар из списка для редактирования", "Предупреждение");
             }
         }
 
@@ -132,7 +132,7 @@ namespace prakt15_konkov
             if (ProductsList.SelectedItem is Product selectedProduct)
             {
 
-                if (MessageBox.Show($"Вы действительно хотите удалить товар \"{selectedProduct.Name}\"?", "Подтверждение удаления", MessageBoxButton.YesNo)
+                if (MessageBox.Show($"Вы действительно хотите удалить товар {selectedProduct.Name}", "Подтверждение удаления", MessageBoxButton.YesNo)
                     == MessageBoxResult.Yes)
                 {
                     db.Products.Remove(selectedProduct);
@@ -140,7 +140,7 @@ namespace prakt15_konkov
                     LoadData();
                 }
             }
-            else MessageBox.Show("Выберите товар из списка для удаления.", "Предупреждение", MessageBoxButton.OK);
+            else MessageBox.Show("Выберите товар из списка для удаления", "Предупреждение", MessageBoxButton.OK);
         }
 
         private void References_Click(object sender, RoutedEventArgs e)
