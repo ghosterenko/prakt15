@@ -84,7 +84,6 @@
                                 <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding Price, StringFormat='{}{0:N2} руб.'}" FontWeight="Bold" FontSize="16" Foreground="{StaticResource PrimaryColor}"/>
 
                                 <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal" Margin="0,4,0,0">
-                                    <TextBlock Text="{Binding Rating, StringFormat='★ {0}'}" Foreground="#FFA000" FontWeight="Bold" Margin="0,0,15,0"/>
                                     <TextBlock Text="{Binding Category.Name, StringFormat='Категория: {0}'}" Foreground="Gray"/>
                                 </StackPanel>
 

@@ -117,7 +117,7 @@ namespace prakt15_konkov {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/prakt15_konkov;V1.0.0.0;component/productwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/prakt15_konkov;component/productwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\ProductWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
