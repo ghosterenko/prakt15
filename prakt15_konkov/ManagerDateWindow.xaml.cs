@@ -68,7 +68,7 @@ namespace prakt15_konkov
                 MessageBox.Show("Категория используется товарами!");
                 return;
             }
-            if (MessageBox.Show($"Удалить \"{c.Name}\"?", "Подтверждение",
+            if (MessageBox.Show($"Удалить {c.Name}?", "Подтверждение",
                 MessageBoxButton.YesNo, MessageBoxImage.Warning) != MessageBoxResult.Yes) return;
 
             db.Categories.Remove(c);
@@ -112,7 +112,7 @@ namespace prakt15_konkov
                 MessageBox.Show("Бренд используется товарами!");
                 return;
             }
-            if (MessageBox.Show($"Удалить \"{b.Name}\"?", "Подтверждение",
+            if (MessageBox.Show($"Удалить {b.Name}?", "Подтверждение",
                 MessageBoxButton.YesNo, MessageBoxImage.Warning) != MessageBoxResult.Yes) return;
 
             db.Brands.Remove(b);
@@ -151,7 +151,7 @@ namespace prakt15_konkov
             Tag t = TagsList.SelectedItem as Tag;
             if (t == null) return;
 
-            if (MessageBox.Show($"Удалить \"{t.Name}\"?", "Подтверждение",
+            if (MessageBox.Show($"Удалить {t.Name"?", "Подтверждение",
                 MessageBoxButton.YesNo, MessageBoxImage.Warning) != MessageBoxResult.Yes) return;
 
             db.Tags.Remove(t);
