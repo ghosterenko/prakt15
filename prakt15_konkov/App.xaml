@@ -41,13 +41,6 @@
                 <Setter Property="Margin" Value="0,2,0,8"/>
             </Style>
 
-            <Style TargetType="Button" BasedOn="{StaticResource MaterialDesignRaisedButton}">
-                <Setter Property="Background" Value="{StaticResource PrimaryColor}"/>
-                <Setter Property="BorderBrush" Value="{x:Null}"/>
-                <Setter Property="Foreground" Value="White"/>
-                <Setter Property="Margin" Value="0,4,0,4"/>
-            </Style>
-
         </ResourceDictionary>
     </Application.Resources>
 </Application>

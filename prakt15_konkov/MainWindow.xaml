@@ -51,9 +51,9 @@
                 <StackPanel Name="ManagerPanel" Visibility="Collapsed" Margin="0,20,0,0">
                     <Separator Margin="0,0,0,15"/>
                     <TextBlock Text="Менеджер" FontSize="16" FontWeight="Bold" Foreground="{StaticResource PrimaryColor}" Margin="0,0,0,10"/>
-                    <Button Content="Добавить товар" Click="Add_Click"/>
+                    <Button Content="Добавить товар" Click="Add_Click" Background="{StaticResource SecondaryColor}"/>
                     <Button Content="Редактировать товар" Click="Edit_Click" Background="{StaticResource SecondaryColor}"/>
-                    <Button Content="Удалить выбранный товар" Click="Delete_Click" Background="#FF5252"/>
+                    <Button Content="Удалить выбранный товар" Click="Delete_Click" Background="{StaticResource SecondaryColor}"/>
                     <Button Content="Управление" Click="References_Click" Background="{StaticResource SecondaryColor}" Margin="0,10,0,0"/>
                 </StackPanel>
             </StackPanel>
