@@ -15,7 +15,6 @@ using System.Windows.Shapes;
 
 namespace prakt15_konkov
 {
-
     public partial class ProductWindow : Window
     {
         public StoreElectronicDbContext db;
@@ -25,6 +24,7 @@ namespace prakt15_konkov
         {
             InitializeComponent();
             this.db = db;
+
             this.product = product;
 
             CategoryBox.ItemsSource = db.Categories.ToList();
